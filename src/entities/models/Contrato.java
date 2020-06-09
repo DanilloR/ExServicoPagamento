@@ -29,9 +29,29 @@ public class Contrato {
 	public int getNumeroContrato() {
 		return numeroContrato;
 	}
+	
+	public void setNumeroContrato (int numeroContrato) {
+		this.numeroContrato = numeroContrato;
+	}
 
 	public Date getData() {
 		return data;
 	}
+	
+	public void setData(Date data) {
+		this.data = data;
+	}
 
+	public List<Prestacao> getPrestacoes() {
+		return prestacoes;
+	}
+
+	public void addPrestacao (Prestacao prestacao) {
+		prestacoes.add(prestacao);
+	}
+	
+	public void removePrestacao (Prestacao prestacao) {
+		prestacoes.remove(prestacao);
+	}
+	
 }
